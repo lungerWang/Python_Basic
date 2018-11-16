@@ -691,8 +691,8 @@
 # with request.urlopen(req, data=login_data.encode('utf-8')) as f:
 #     print('status', f.status, f.reason)
 #     print('data:', f.read().decode('utf-8'))
-from html.parser import HTMLParser
-from html.entities import name2codepoint
+# from html.parser import HTMLParser
+# from html.entities import name2codepoint
 
 # class MyHTMLParser(HTMLParser):
 #
@@ -772,3 +772,29 @@ from html.entities import name2codepoint
 # r = requests.get('https://bapi.baby-kingdom.com/index.php?mod=stand&op=types&ver=3.9.0&app=android&code=NWFkMmI0ZDU4N2RlOTg1ZDc1NThhZDQ1MWRiMmQxNmE=-MTU0MjMzNjM4Mw==')
 # print(r.json())
 #r = requests.post('https://accounts.douban.com/login', data={'form_email': 'abc@example.com', 'form_password': '123456'})
+# chardet :char detect 字符编码检查库
+# import chardet
+# d = chardet.detect(b'Hello, world!')
+# print(d)
+#
+# d = chardet.detect('我是谁，从哪里来'.encode('GBK'))
+# print(d)
+#
+# data = '最新の主要ニュース'.encode('euc-jp')
+# d= chardet.detect(data)
+# print(d)
+# 用python来编写脚本简化日常的运维工作是python的一个重要的用途
+# import psutil
+# print(psutil.cpu_count())
+# print(psutil.cpu_count(logical=False))
+# print(psutil.cpu_times())
+# print(psutil.disk_partitions())
+# print(psutil.disk_usage('/'))
+# print(psutil.net_if_addrs())
+# print(psutil.net_if_stats())
+# print(psutil.pids())
+# p = psutil.Process(8856)
+# print(p.name())
+# print(p.exe())
+# print(p.cwd())
+
