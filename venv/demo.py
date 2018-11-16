@@ -762,3 +762,13 @@ from html.entities import name2codepoint
 #
 # iamge = image.filter(ImageFilter.BLUR)
 # image.save('code.jpg', 'jpeg')
+#import requests
+# r = requests.get('https://www.douban.com')
+# print(r.status_code)
+# print(r.text)
+# r = requests.get('https://www.douban.com/search', params = {'q':'python', 'cat':'dog'})
+# print(r.url)
+# print(r.json())
+# r = requests.get('https://bapi.baby-kingdom.com/index.php?mod=stand&op=types&ver=3.9.0&app=android&code=NWFkMmI0ZDU4N2RlOTg1ZDc1NThhZDQ1MWRiMmQxNmE=-MTU0MjMzNjM4Mw==')
+# print(r.json())
+#r = requests.post('https://accounts.douban.com/login', data={'form_email': 'abc@example.com', 'form_password': '123456'})
