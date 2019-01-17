@@ -27,11 +27,13 @@ def main():
     tcp_server_socket.bind(("", 7890))
     # 3.变为监听套接字
     tcp_server_socket.listen(128)
-    # 4.等待新客户端的链接
-    new_socket, client_addr = tcp_server_socket.accept()
-    # 5.为这个客户端服务
-    service_client(new_socket)
+    while True:
+        # 4.等待新客户端的链接
+        new_socket, client_addr = tcp_server_socket.accept()
+        # 5.为这个客户端服务
+        service_client(new_socket)
 
+    tcp_server_socket.close()
 
 if __name__ == "__main__":
     main()
